@@ -1,7 +1,7 @@
 (function() {
     angular
         .module('firebaseChat', [
-            'ui.router'
+            'ui.router', 'firebase'
         ])
         .config(function($stateProvider, $urlRouterProvider) {
 
@@ -18,6 +18,8 @@
                     templateUrl: 'scripts/chat/chat.html',
                     controller: 'ChatCtrl'
                 })
-        });
-    
+
+        })
+        .constant
+
 })();

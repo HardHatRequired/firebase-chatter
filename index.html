@@ -7,21 +7,38 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body ng-controller="ChatCtrl">
 
 <h1>Awesomeness!</h1>
-
+{{index}}
 <ui-view></ui-view>
 
-
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/firebase/firebase.js"></script>
-<script src="node_modules/angularfire/dist/angularfire.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCT559YhP3noBoT2hnPvUYeeEcs2TMA5ks",
+    authDomain: "fir-practice-98f62.firebaseapp.com",
+    databaseURL: "https://fir-practice-98f62.firebaseio.com",
+    storageBucket: "fir-practice-98f62.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="node_modules/angularfire/dist/angularfire.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/login/LoginCtrl.js"></script>
 <script src="scripts/login/loginService.js"></script>
 <script src="scripts/chat/ChatCtrl.js"></script>
 <script src="scripts/chat/chatService.js"></script>
+
 </body>
 </html>
